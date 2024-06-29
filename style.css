@@ -72,6 +72,20 @@ h1.opening1, h1.opening3, p{
     letter-spacing: 0.3rem;
 }
 
+li{
+    font-family: dmsans; 
+    letter-spacing: 0.1rem;
+}
+
+ul{
+    width: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: "*";
+    list-style-position: inside;
+}
+
 .typing{
     overflow: hidden; 
     white-space: nowrap; 
@@ -464,6 +478,12 @@ footer{
 
     footer{
         padding: 3rem;
+    }
+
+    ul{
+        width: 100%;
+        font-size: 0.7rem;
+        padding: 0;
     }
 }
 

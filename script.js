@@ -19,4 +19,21 @@ close.addEventListener('click', () => {
   modal.style.display = 'none';
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  const currentTheme = localStorage.getItem('theme') || 'day';
+  document.documentElement.setAttribute('data-theme', currentTheme);
+
+  const toggleButton = document.getElementById('toggle-button');
+  toggleButton.addEventListener('click', () => {
+      let theme = document.documentElement.getAttribute('data-theme');
+      if (theme === 'day') {
+          theme = 'night';
+      } else {
+          theme = 'day';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('theme', theme);
+  });
+});
+
 

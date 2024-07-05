@@ -3,211 +3,245 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Best digital invitation in Indonesia">
-    <meta name="keywords" content="invitation, digital, wedding, indnesia, jakarta, undangan, pernikahan, bagus, murah, cepat">
-    <title>Wedding Invitation</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/33f51cc872.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <title>Grounded</title>
 </head>
 <body>
     <header>
-        <div class = "container container-header">
+        <div class = "container-header">
+            <img class = "logo" src="assets/grounded_logo.png" alt="Grounded Logo">
             <nav class ="topnav" id="myTopnav">
-                <a class="icon">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
                 </a>
-                <a href="#history">The Story</a>
-                <a href="#places">The Wedding</a>
-                <a href="#rsvp">RSVP</a>
+                <a>Community</a>
+                <a>Shop</a>
+                <a id = "openModal">Free Consultation</a>
             </nav>
+        </div>
+        <div class="marquee">
+            <div class="track">
+              <div class="content">
+                    <p>Free delivery on all orders over $100. Deliver worldwide. Get 50% off for special items. </p>
+                </div>
+            </div>
         </div>
     </header>
     <main>
-        <section class = "opening">
-            <div class = "opening-content">
-                <h1 class = "typing opening1">You're Invited to</h1>
-                <h1 class = "typing opening2">Kayla and Jason</h1>
-                <h1 class = "typing opening3">Wedding Day</h2>
-            </div>
-        </section>
-
-        <section class = "couple">
-            <div class = "couple-container">
-                <div class= "couple-content-container">
-                    <article class = "couple-content-woman">
-                        <h1 class = "content-title-small">Kayla</h1>
-                        <p class = "content">
-                            Raised in a small town, she grew up loving the outdoors, which led her to study environmental science in college. Known for her warm personality and infectious laughter, she works with environmental organizations, travels frequently, and enjoys spending weekends hiking, reading, and volunteering.
-                        </p>
-                    </article>
-                    
-                    <article class = "couple-content-man">
-                        <h1 class = "content-title-small">Jason</h1>
-                        <p class = "content">
-                            Growing up in a bustling city, he found solace in weekend hiking trips and nature explorations. He pursued a degree in engineering and now works on sustainable design projects. Known for his quick wit and supportive nature, Jason enjoys planning hiking trips, exploring new trails, and spending time with friends. 
-                        </p>
-                    </article>
+        <div class = "container-main">
+            <section class = "banner">
+                <div class = "banner-content">
+                    <h1>Your skin's true love.</h1>
+                    <p>Organics, naturals, sustainable. </p>
+                    <button class="banner-button" href="#">Shop Now</button>
                 </div>
-                <aside class = "img-couple1">
+            </section>
+
+            <section class = products>
+                <div class = products-header>
+                    <h1>Best Sellers</h1>
+                    <div class = "products-slider">
+                        <a class="slider-container" href="#firstProduct">
+                            <i class="fa-solid fa-circle-chevron-left"></i>
+                        </a>
+                        <a class="slider-container" href="#lastProduct">
+                            <i class="fa-solid fa-circle-chevron-right" id="slider-next"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="products-content grid-container">
+                    <div class="grid-item" id = "firstProduct">
+                        <div class="img-wrapper">
+                            <img src="assets/soap.jpg" alt="Soap">
+                        </div>
+                        <p>Made from natural oils and plant-based ingredients, free from synthetic chemicals, and is gentle on the skin while effectively cleansing.</p>
+                        <a href="#">Learn More</a>
+                        <button>Shop Now</button>
+                    </div>
+                    <div class="grid-item">
+                        <div class="img-wrapper">
+                            <img src="assets/face cleanser.jpg" alt="Cleanser">
+                        </div>
+                        <p>Formulated with natural ingredients like botanical extracts and essential oils, effectively removing impurities and makeup while being gentle and nourishing to the skin without harsh chemicals.</p>
+                        <a href="#">Learn More</a>
+                        <button>Shop Now</button>
+                    </div>
+                    <div class="grid-item">
+                        <div class="img-wrapper">
+                            <img src="assets/shampoo.jpg" alt="Shampoo">
+                        </div>
+                        <p>Formulated with botanical extracts and essential oils, avoiding sulfates and parabens, to clean and nourish hair naturally.</p>
+                        <a href="#">Learn More</a>
+                        <button>Shop Now</button>
+                    </div>  
+                    <div class="grid-item">
+                        <div class="img-wrapper">
+                            <img src="assets/moisturizer.jpg" alt="Moisturizer">
+                        </div>
+                        <p>Uses natural oils and hydrating agents like aloe vera and shea butter, promoting healthy, radiant skin without harsh additives.</p>
+                        <a href="#">Learn More</a>
+                        <button>Shop Now</button>
+                    </div>
+                    <div class="grid-item">
+                        <div class="img-wrapper">
+                            <img src="assets/lotion.jpg" alt="Lotion">
+                        </div>
+                        <p>Contains plant-derived emollients and moisturizers, providing hydration and skin nourishment without synthetic fragrances or preservatives</p>
+                        <a href="#">Learn More</a>
+                        <button>Shop Now</button>
+                    </div>
+                    <div class="grid-item" id = "lastProduct">
+                        <div class="img-wrapper">
+                            <img src="assets/perfume.jpg" alt="Perfume">
+                        </div>
+                        <p>Crafted from pure essential oils and natural extracts, offering a subtle and chemical-free fragrance.</p>
+                        <a href="#">Learn More</a>
+                        <button>Shop Now</button>
+                    </div>   
+                </div>
+            </section>
+
+            <section class = "about-us">
+                <div class = "about-us-body">
                     <picture>
-                        <source media="(max-width:600px)" srcset="assets/image20.jpg">
-                        <img src="assets/image9.jpg" alt = "image">
-                      </picture>
-                </aside>
-            </div>
-        </section>
-
-        <section class = "history" id = "history">
-            <div class = "history-container">
-                <h1 class = "content-title">The Story</h1>
-                <div class = "history-content-container">
-                    <aside class = "img-couple2">
-                        <picture>
-                            <source media="(max-width:600px)" srcset="assets/image21.jpg" alt = "image">
-                            <img src="assets/image2.jpg" alt = "image">
-                          </picture>
-                    </aside>
-                    <article class = "couple-content-history">
-                        <p class = "content">
-                            Jason met Kayla at a friend's birthday party, where they were seated next to each other. Jason's wit and Kayla's genuine laugh drew them together. Discovering a shared passion for hiking, they exchanged contact information to plan a trip. Their connection quickly blossomed into a close friendship and then something more.
-                        </p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class = "gallery">
-            <div class="grid-container">
-                <div class="grid-item item1">
-                    <img src = "assets/image8.jpg" alt = "image">
-                </div>
-                <div class="grid-item item2">
-                    <picture>
-                        <source media="(max-width:600px)" srcset="assets/image22.jpg" alt = "image">
-                        <img src="assets/image6.jpg" alt = "image">
+                        <source media="(max-width:600px)" srcset="assets/about-us1.jpg" alt = "image">
+                        <img src="assets/about-us2.jpg" alt = "image">
                     </picture>
-                </div>
-                <div class="grid-item item3">
-                    <picture>
-                        <source media="(max-width:600px)" srcset="assets/image23.jpg" alt = "image">
-                        <img src="assets/image4.jpg" alt = "image">
-                    </picture>
-                </div>  
-                <div class="grid-item item4">
-                    <img src = "assets/image18.jpg" alt = "image">
-                </div>
-                <div class="grid-item item5">
-                    <img src = "assets/image19.jpg" alt = "image">
-                </div>
-            </div>
-
-            <div class ="scroll-container">
-                <div class = "grid-container2">
-                    <div class="grid-item">
-                        <img src = "assets/image1.jpg" alt = "image">
-                    </div>
-                    <div class="grid-item">
-                        <img src = "assets/image3.jpg" alt = "image">
-                    </div>
-                    <div class="grid-item">
-                        <img src = "assets/image5.jpg" alt = "image">
-                    </div>
-                    <div class="grid-item">
-                        <img src = "assets/image7.jpg" alt = "image">
-                    </div>
-                    <div class="grid-item">
-                        <img src = "assets/image14.jpg"alt = "image">
-                    </div>
-                    <div class="grid-item">
-                        <img src = "assets/image11.jpg"alt = "image">
-                    </div>
-                    <div class="grid-item">
-                        <img src = "assets/image12.jpg" alt = "image">
-                    </div>
-                    <div class="grid-item">
-                        <img src = "assets/image13.jpg" alt = "image">
+                    <div class = "about-us-content">
+                        <h1>What make us different?</h1>
+                        <p>
+                            At our skincare line, we are dedicated to sustainability, using eco-friendly packaging and sourcing our ingredients responsibly to protect our planet. Our products are crafted with certified organic ingredients, ensuring purity and safety without harmful chemicals. We embrace the power of nature, utilizing minimal processing to retain the natural benefits of our ingredients, avoiding artificial additives, and preserving our products naturally. Our holistic approach promotes overall wellness, offering a skincare experience that nurtures and rejuvenates your skin while being kind to the environment. This commitment to sustainability, organic purity, and natural beauty sets us apart from the rest.
+                        </p>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class = "places" id = "places">
-            <h1 class = "content-title">The Wedding</h1>
-            <div class = "grid-container3">
-                <div class = "places-grid-item">
-                    <div class = "img-wrapper">
-                        <img src = "assets/church.jpg" alt = "image">
+            <section class = "category">
+                <h1>Shop by Category</h1>
+                <div class="category-content grid-container">
+                    <div class="grid-item item1">
+                        <figure>
+                            <img src = "assets/hair.jpg" alt = "image">
+                            <figcaption>Hair</figcaption>
+                        </figure>
                     </div>
-                    <div class = "places-content">
-                        <p class = "header">Holy Matrimony</p>
-                        <p class = "subheader">Kawaramachi Church, Kyoto</p>
-                        <p class = "content">Monday, 27 June 2029</p>
-                        <p class = "content">12 PM - 2 PM</p>
+                    <div class="grid-item item2">
+                        <figure>
+                            <img src="assets/face.jpg" alt = "image">
+                            <figcaption>Face</figcaption>
+                        </figure>
                     </div>
-                </div>
-                <div class = "places-grid-item">
-                    <div class = "img-wrapper">
-                        <img src = "assets/hotel.jpg" alt = "image">
+                    <div class="grid-item item3">
+                        <figure>
+                            <img src="assets/body.jpg" alt = "image">
+                            <figcaption>Body</figcaption>
+                        </figure>
+                    </div>  
+                    <div class="grid-item item4">
+                        <figure>
+                            <img src = "assets/makeup.jpg" alt = "image">
+                            <figcaption>Make Up</figcaption>
+                        </figure>
                     </div>
-                    <div class = "places-content">
-                        <p class = "header">Wedding Dinner</p>
-                        <p class = "subheader">Ritz Carlton, Kyoto</p>
-                        <p class = "content">Tuesday, 28 June 2029</p>
-                        <p class = "content">7 PM - 9 PM</p>
+                    <div class="grid-item item5">
+                        <figure>
+                            <img src = "assets/fragrance.jpg" alt = "image">
+                            <figcaption>Fragrance</figcaption>
+                        </figure>
                     </div>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <section class = "rsvp" id = "rsvp">
-            <h1 class = "content-title">Please Rsvp</h1>
-
-            <form>
-                <fieldset>
-                    <label for="full-name">Full Name </label>
-                    <input id="full-name" name="full-name" type="text" required />
-
-                    <label for="email">Email</label>
-                    <input id="email" name="email" type="email" required />
-
-                    <label for="phone">Phone Number</label>
-                    <input id="phone" name="phone" type="number" required />
-
-                    <label for="message">Message for us</label>
-                    <textarea id="message" name="message" rows="10"></textarea>
-
-                    <label for="gender">Are you able to come?</label>
-                    <input type="radio" name="gender" value="male"/>Yes
-                    <input type="radio" name="gender" value="female"/>No
-
-                    <label for="referrer">How many person?</label>
-                    <select id="referrer" name="referrer">
-                        <option value="">Select One</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                    </select>
+            <section class = "review">
+                <h1>What they said about us?</h1>
+                <div class="review-slider-container">
+                    <div class="slider">
+                        <div class="item">
+                            <img src="assets/person1.jpg" alt="Person 1">
+                            <p>"I love the products I bought from this store. They are very natural and clean."</p>
+                        </div>
     
-                    <button type="submit" value="Submit">Submit</button>
-                </fieldset>
-            </form>
-        </section>
+                        <div class="item">
+                            <img src="assets/person2.jpg" alt="Person 2">
+                            <p>"Very suitable for sensitive skin."</p>
+                        </div>
+    
+                        <div class="item">
+                            <img src="assets/person3.jpg" alt="Person 3">
+                            <p>"It smells amazing!"</p>
+                        </div>
+                        <div class="item">
+                            <img src="assets/person4.jpg" alt="Person 4">
+                            <p>"The product use sustainable packaging."</p>
+                        </div>
+    
+                        <div class="item">
+                            <img src="assets/person5.jpg" alt="Person 5">
+                            <p>"The seller is very helpful and friendly."</p>
+                        </div>
+                        
+                        <div class="item">
+                            <img src="assets/person6.jpg" alt="Person 6">
+                            <p>"I use this for my baby."</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
-        <h1 class = "content-title">See You</h1>
-        <p class = "content">
-            Your presence is already a priceless present.
-            Should you wish to send us a little something besides and if you need any further assistance, feel free to contact +81888999777!
-        </p>
-        <p class = "content"><strong>Please pay attention to these little details.</strong></p>
-            <strong>
-            <ul class = "styled-list">
-                <li>Please adhere to the blue formal dress code.</li>
-                <li>Private vehicles can be parked inside the hotel at a rate of 300 JPY per 30 minutes.</li>
-                <li>For those attending the blessing mass, rooms for rest and refreshments will be provided until the evening event.</li>
-            </ul>
-            </strong>
-        </div>
-        <p class ="content">Created by Evania Joycelin</p>
+        <a href="http://www.instagram.com"><img src = "https://img.icons8.com/?size=100&id=123922&format=png&color=F8F4EF" alt = "Instagram Icon"></a>
+        <a href="http://www.facebook.com"><img src = "https://img.icons8.com/?size=100&id=100956&format=png&color=F8F4EF" alt = "Facebook Icon"></a>
+        <a href="http://www.youtube.com"><img src = "https://img.icons8.com/?size=100&id=32309&format=png&color=F8F4EF" alt = "YouTube Icon"></a>
+        <p>© 2024 Grounded by Evania Joycelin</p>
     </footer>
+
+    <dialog class="modal-popup-consultation" id="consultationModal">
+        <div class = "modal-container">
+            <div class = "modal-header">
+                <h1>Book your consultation now!</h1>
+                <a id="closeModal"><i class="fa-solid fa-x"></i></a>
+            </div>
+            <div class = "modal-body">
+                <form>
+                    <fieldset>
+                        <label for="full-name">Full Name </label>
+                        <input id="full-name" name="full-name" type="text" required />
+    
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" required />
+    
+                        <label for="phone">Phone Number</label>
+                        <input id="phone" name="phone" type="number" required />
+    
+                        <label for="gender">Gender</label>
+                        <input type="radio" name="gender" value="male"/>Male
+                        <input type="radio" name="gender" value="female"/>Female
+    
+                        <label for="referrer">What is your issue?</label>
+                        <select id="referrer" name="referrer">
+                            <option value="">Select One</option>
+                            <option value="1">Hair</option>
+                            <option value="2">Body</option>
+                            <option value="3">Make Up</option>
+                            <option value="4">Fragrance</option>
+                            <option value="5">Face</option>
+                        </select>
+
+                        <label for="message">Please describe about your what you want to consult</label>
+                        <textarea id="message" name="message" rows="10"></textarea>
+        
+                        <button type="submit" value="Submit">Submit</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </dialog>
+
+    <script src="script.js"></script>
 </body>
 </html>

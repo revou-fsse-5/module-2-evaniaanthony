@@ -6,7 +6,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: #F8F4EF;
-    color: #76453B;
+    color: #4c1d14;
     text-align: center;
     font-family: "Poppins", sans-serif;
 }
@@ -40,7 +40,7 @@ nav li{
 
 nav li a{
     text-decoration: none;
-    color:#76453B
+    color:#4c1d14
 }
 
 .logo{
@@ -69,7 +69,7 @@ nav li a{
 .topnav a {
     float: left;
     display: block;
-    color: #76453B;
+    color: #4c1d14;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -78,7 +78,7 @@ nav li a{
   
 .topnav a:hover {
     background-color: #ddd;
-    color: #76453B;
+    color: #4c1d14;
 }
   
 .topnav a.active {
@@ -88,7 +88,7 @@ nav li a{
   
 .topnav .icon {
     display: none;
-    color: #76453B;
+    color: #4c1d14;
 
 }
 /* Marquee */
@@ -97,7 +97,7 @@ nav li a{
     overflow: hidden;
     white-space: nowrap;
     box-sizing: border-box;
-    background-color: #76453B;
+    background-color: #4c1d14;
     margin-top: 7rem;
 }
 .track {
@@ -143,7 +143,7 @@ nav li a{
         right: 0px;
         bottom: 0px;
         left: 0px;
-        background-color: #76453B;
+        background-color: #4c1d14;
         opacity: 0.63;
     }
 }
@@ -166,7 +166,7 @@ nav li a{
 }
 .banner-button:hover {
     background-color: #F8F4EF; 
-    color: #76453B;
+    color: #4c1d14;
 }
 
 /* Best Sellers */
@@ -204,7 +204,7 @@ nav li a{
 }
   
 .products-content.grid-container .grid-item {
-    background-color: #B19470;
+    background-color: #4c1d14;
     border-radius: 1rem;
     padding: 1rem;
     font-size: 0.8rem;
@@ -250,7 +250,7 @@ nav li a{
     background-color: #F8F4EF;
     border: none;
     width: 100%;
-    color:#76453B;
+    color:#4c1d14;
 }
 
 .products-header{
@@ -266,7 +266,7 @@ nav li a{
 }
 
 .slider-container{
-    color: #76453B;
+    color: #4c1d14;
 }
 
 /* About Us */
@@ -324,7 +324,7 @@ nav li a{
     right: 0;
     transition: transform .2s;
     border-radius: 15px;
-    box-shadow: #76453B;
+    box-shadow: #4c1d14;
 }
 
 .category-content .grid-item:hover {
@@ -346,7 +346,7 @@ nav li a{
 }
 
 .category-content figcaption {
-    background-color: rgba(118, 69, 59, 0.8);
+    background-color: rgba(76, 29, 20, 0.8); 
     color: #F8F4EF;
     padding: 2px;
     text-align: center;
@@ -396,13 +396,13 @@ nav li a{
     height: 14rem;
     border-radius: 50%;
     object-fit: cover;
-    border: 1px solid #76453B;
+    border: 1px solid #4c1d14;
     margin-left: auto;
     margin-right: auto;
 }
 /* Footer */
 footer{
-    background-color: #76453B;
+    background-color: #4c1d14;
     padding: 1rem;
     color: #F8F4EF;
     position: relative;
@@ -428,11 +428,11 @@ footer p {
     padding: 1.5rem;
     z-index: 1000;
     overflow-y: scroll;
-    background-color: rgba(118, 69, 59, 0.6);
+    background-color: rgba(76, 29, 20, 0.6);
 }
 
 .modal-container{
-    color: #76453B;
+    color: #4c1d14;
     background-color: #F8F4EF;
     width: 55%;
     margin-left: auto;
@@ -478,7 +478,7 @@ footer p {
     display: block;
     margin-bottom: 5px;
     border-radius: 15px;
-    border: 2px solid #76453B;
+    border: 2px solid #4c1d14;
     padding: 0.5rem;
 }
 
@@ -503,7 +503,7 @@ footer p {
     margin-right: auto;
     height: 2rem;
     border-radius: 15px;
-    border: 2px solid #76453B;
+    border: 2px solid #4c1d14;
     margin-top: 0.5rem;
     width: 50%;
 }

@@ -31,6 +31,7 @@ I also created a "Best Sellers" section that showcases the most frequently purch
 ![alt text](/readmeassets/image-5.png)
 
 This how it will look like in mobile. 
+
 ![alt text](/readmeassets/image-6.png)
 
 I also show a little explanation about grounded, with an image in the left. 
@@ -43,6 +44,7 @@ I also make section about product category. Using display grid, but as you can s
 
 ![alt text](/readmeassets/image-9.png)
 In the phone it will look like this, the grid layout will change.
+
 ![alt text](/readmeassets/image-10.png)
 
 I also make a slider review, the slider will automatically slide, I use CSS animation to achieve this. 
